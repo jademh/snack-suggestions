@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Title
+pages:
+- content/pages/this-is-a-test-page.md
