@@ -1,7 +1,6 @@
 import matter from "gray-matter";
 import Layout from "../components/MyLayout";
 import Link from "next/link";
-import fetch from "isomorphic-unfetch";
 
 const Index = props => {
   console.log(props);
@@ -49,7 +48,6 @@ Index.getInitialProps = async function() {
     return data;
   })(require.context("../content/pages", true, /\.md$/));
 
-  console.log(posts);
   return {
     allBlogs: posts
   };
