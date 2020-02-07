@@ -18,6 +18,7 @@ fields:
     required: false
     options:
     - Review
+    - Interview
     source:
       type: simple
       section: 
