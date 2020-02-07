@@ -6,5 +6,11 @@ module.exports = {
       use: "raw-loader"
     });
     return config;
+  },
+  exportTrailingSlash: true,
+  exportPathMap: function() {
+    return {
+      "/": { page: "/" }
+    };
   }
 };
