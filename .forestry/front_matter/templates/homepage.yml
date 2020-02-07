@@ -7,6 +7,23 @@ fields:
   config:
     required: false
   label: Title
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Review
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
 pages:
 - content/pages/this-is-a-second-test-page.md
 - content/pages/this-is-a-test-page.md
